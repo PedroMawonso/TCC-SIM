@@ -1,15 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="Animacao.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Sistema de Inscrição e Matricula</title>
 </head>
-<body class="font-[Poppins]">
-    <h1 class="text-white">Hello world</h1>
+<body class="font-[Poppins] min-h-screen flex flex-col bg-gray-200 
+            overflow-hidden transition-opacity duration-700 opacity-100">
+  <!-- barra superior -->
+   <div class="bg-[#002A50] text-white py-5 pl-15 flex relative" >
+      
+        <!--   Essa é a parte da logo da Instituição -->
+        <div class="flex md:flex-row items-center gap-6">
+            <img src="Acess/Luiza-Andaluz-Logo.png" alt="logo" class="w-10 h-10 lg:w-15 lg:h-15">
+            <span class="text-sm lg:text-2xl font-bold">IMTLA</span>
+        </div>
+
+        <!--   Essa é parte da imagem do user -->
+        <div class="w-10 h-10 lg:w-15 lg:h-15 lg:right-50 bg-gray-400 rounded-full overflow-hidden absolute right-30">
+            <img src="Acess/homem-de-negocios.png" alt="logo_homem" class="w-full h-full object-cover">
+        </div>
+        <div class="flex items-center">
+            <span id="user_in" class="text-white absolute lg:right-30 right-10 font-semibold">Adimin</span>
+        </div>
+   </div>
+   <!-- Fim barra superior -->
+    
+   <!-- Inicio menu -->
+    <div class="flex h-screen">
+        <aside class="w-64 bg-[#002A50] text-white flex flex-col pt-6">
+            <nav class="flex flex-col gap-5">
+
+                <a href="#" class="flex items-center w-full gap-6 bg-[#021322c7] rounded px-4 py-3">
+                    <img src="Acess/house_18511239.png" alt="Home" class="w-8 h-8">
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="#" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
+                        duration-500 hover:duration-500  rounded px-4 py-3">
+                    <img src="Acess/curriculo.png" alt="Home" class="w-8 h-8">
+                    <span>Inscrição</span>
+                </a>
+
+                 <a href="#" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
+                        duration-500 hover:duration-500  rounded px-4 py-3">
+                    <img src="Acess/documento.png" alt="Home" class="w-8 h-8">
+                    <span>Consultas</span>
+                </a>
+
+                 <a href="#" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
+                        duration-500 hover:duration-500  rounded px-4 py-3">
+                    <img src="Acess/aluna (1).png" alt="Home" class="w-8 h-8">
+                    <span>Alunos</span>
+                </a>
+
+                  <a href="Login.html" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
+                        duration-500 hover:duration-500  rounded px-4 py-3 link">
+                    <img src="Acess/log-out.png" alt="Home" class="w-8 h-8">
+                    <span>Log out</span>
+                </a>
+            </nav>
+        </aside>
+    </div>
+
+
 </body>
 </html>
