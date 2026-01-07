@@ -6,7 +6,7 @@ links.forEach(link => {
         document.body.classList.add('opacity-0')
         setTimeout(() => {
             window.location.href = link.href
-        }, 3000)
+        }, 2000)
     })
 })
 
