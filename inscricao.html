@@ -11,9 +11,10 @@
     <title>Sistema de Inscrição e Matricula</title>
 </head>
 <body class="font-[Poppins] min-h-screen flex flex-col bg-gray-200 
-            overflow-hidden transition-opacity duration-700 opacity-100">
+    h- transition-opacity duration-700 opacity-100">
   <!-- barra superior -->
-   <div class="bg-[#002A50] text-white py-5 pl-15 flex relative" >
+   <header class="bg-[#002A50] fixed w-full top-0 left-0 z-50
+        items-center text-white py-5 pl-15 flex" >
       
         <!--   Essa é a parte da logo da Instituição -->
         <div class="flex md:flex-row items-center gap-6">
@@ -28,21 +29,27 @@
         <div class="flex items-center">
             <span id="user_in" class="text-white absolute lg:right-30 right-10 font-semibold">Adimin</span>
         </div>
-   </div>
+   </header>
    <!-- Fim barra superior -->
     
    <!-- Inicio menu -->
-    <div class="flex h-screen">
-        <aside class="w-64 bg-[#002A50] text-white flex flex-col pt-6">
-            <nav class="flex flex-col gap-5">
+    <main class="flex lg:h-screen">
+        <aside id="sidebar" class="w-50 bg-[#002A50] text-amber-50 h-screen 
+        fixed top-0 left-0 flex flex-col 
+        pt-25 transition-all duration-300
+        -translate-x-full opacity-0 text-[12px] lg:w-64
+        lg:translate-x-0 lg:opacity-100 lg:static lg:flex lg:text-[16px]
+        lg:pt-35">
 
-                <a href="Transicao.html?next=Pagina_inicial.html" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] rounded px-4 py-3">
+            <nav class="flex flex-col gap-5">
+                <a href="Transicao.html?next=Pagina_inicial.html" class="flex items-center w-full 
+                        gap-6 hover:bg-[#021e36c7] duration-500 hover:duration-500 rounded px-4 py-3">
                     <img src="Acess/house_18511239.png" alt="Home" class="w-8 h-8">
                     <span>Dashboard</span>
                 </a>
 
                 <a href="Transicao.html?next=inscricao.html" class="flex items-center w-full gap-6 bg-[#021322c7] 
-                        duration-500 hover:duration-500  rounded px-4 py-3">
+                        rounded px-4 py-3">
                     <img src="Acess/curriculo.png" alt="Home" class="w-8 h-8">
                     <span>Inscrição</span>
                 </a>
@@ -53,26 +60,40 @@
                     <span>Consultas</span>
                 </a>
 
-                 <a href="Alunos.html" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
+                 <a href="Transicao.html?next=Alunos.html" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
                         duration-500 hover:duration-500  rounded px-4 py-3">
                     <img src="Acess/aluna (1).png" alt="Home" class="w-8 h-8">
                     <span>Alunos</span>
                 </a>
 
-                  <a href="Login.html" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
+                  <a href="Transicao.html?next=Login.html" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
                         duration-500 hover:duration-500  rounded px-4 py-3 link">
                     <img src="Acess/log-out.png" alt="Home" class="w-8 h-8">
                     <span>Log out</span>
                 </a>
             </nav>
         </aside>
-    </div>
-     <footer class= "bg-[#002A50] text-white py-1 fixed bottom-0 left-0 z-50 w-full">
+        <!--Inicio do Conteudo principal-->
+        <div class="flex-1 p-15 mt-10 lg:ml-2 lg:mt-23 bg-gray-100">
+            <h1 class="text-black md:text-xl lg:text-xl font-bold ">Inscrição De Alunos</h1>
+            <!--Os Cards -->
+            <div class="">
+
+            </div>
+        </div>
+        <!--Fim do Conteudo principal-->
+    </main>
+    <!--Fim da Barra de menu -->
+    
+    <img class="absolute bottom-10 right-2 w-10 h-10 cursor-pointer lg:hidden " src="/Acess/menu (1).png" alt="menu" onclick="mostrar_menu()">
+    <!--Início do Rodapé-->
+    <footer class= "bg-[#002A50] text-white py-1 fixed bottom-0 left-0 z-50 w-full">
         <div class="flex items-center justify-center">
             <span class="text-sm">
                  ©2026-Elite Finalistas Todos os direitos reservados
             </span>
         </div>
     </footer>
+    <!--Fim do Rodapé-->
 </body>
 </html>

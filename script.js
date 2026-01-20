@@ -13,11 +13,11 @@ document.getElementById("loginForm").onsubmit = function(e) {
     if (inputpass.type === 'password')
     {
       inputpass.setAttribute('type','text')
-      btnpass.classList.replace('bi-eye', 'bi-eye-slash')
+      btnpass.classList.replace('bi-eye-slash', 'bi-eye')
     }
     else
     {
       inputpass.setAttribute('type', 'password')
-      btnpass.classList.replace('bi-eye-slash', 'bi-eye')
+      btnpass.classList.replace('bi-eye', 'bi-eye-slash')
     }
   }

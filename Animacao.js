@@ -14,7 +14,10 @@ window.addEventListener('DOMContentLoaded', () => {
     document.body.classList.remove('opacity-0')
 })
 
-function event(){
-    var menu = document.getElementById('menuBar')
-    
+// Função para mostrar a barra de menu para telas menores
+
+function mostrar_menu(){
+    const menu = document.getElementById("sidebar")
+    menu.classList.toggle("-translate-x-full")
+    menu.classList.toggle("opacity-0")
 }
