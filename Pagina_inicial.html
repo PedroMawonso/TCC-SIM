@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Sistema de Inscrição e Matricula</title>
 </head>
-<body class="font-[Poppins] min-h-screen flex flex-col bg-gray-200 
+<body class="font-[Poppins] min-h-screen flex flex-col bg-gray-300 
     h- transition-opacity duration-700 opacity-100">
   <!-- barra superior -->
    <header class="bg-[#002A50] fixed w-full top-0 left-0 z-50
@@ -29,7 +29,7 @@
         <div class="flex items-center">
             <span id="user_in" class="text-white absolute lg:right-30 right-10 font-semibold">Adimin</span>
         </div>
-   </header>
+   </header> bg-gray-200
    <!-- Fim barra superior -->
     
    <!-- Inicio menu -->
@@ -74,18 +74,35 @@
             </nav>
         </aside>
         <!--Inicio do Conteudo principal-->
-        <div class="flex-1 p-15 mt-10 lg:ml-2 lg:mt-23 bg-gray-100">
+        <div class="flex-1 p-15 mt-10 ml-2 lg:ml-5 lg:mt-23 min-w-0 bg-gray-300 transition-all duration-300">
             <h1 class="text-black md:text-xl lg:text-xl font-bold ">Painel Inicial</h1>
             <!--Os Cards -->
-            <div class="">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-6">
+                
+                <!-- Parte dos inscritos -->
+                <div class="bg-[#084D8B] rounded-lg shadow p-12 w-80 mt-10 flex flex-col items-center text-[#ffffffe8]">
+                    <h2 class="font-bold text-xl">Total Inscritos</h2>
+                    <p id="n_inscritos" class="text-2xl mt-7">0</p>
+                </div>
+                
+                <!--Parte dos Matriculados-->
+                 <div class="bg-[#28B532] rounded-lg shadow p-12 w-80 mt-10 flex flex-col items-center text-[#ffffffe8]">
+                    <h2 class="font-bold text-xl text-center">Total Matriculados</h2>
+                    <p id="n_matriculados" class="text-2xl mt-7">0</p>
+                </div>
 
+                <!-- Parte das vagas Disponíveis-->
+                 <div class="bg-[#DF9B1D] rounded-lg shadow p-12 w-80 mt-10 flex flex-col items-center text-[#ffffffe8]">
+                    <h2 class="font-bold text-xl text-center">Total de Vagas Disponíveis</h2>
+                    <p id="n_vagas" class="text-2xl mt-7">0</p>
+                </div>
             </div>
         </div>
         <!--Fim do Conteudo principal-->
     </main>
     <!--Fim da Barra de menu -->
     
-    <img class="absolute bottom-10 right-2 w-10 h-10 cursor-pointer lg:hidden " src="/Acess/menu (1).png" alt="menu" onclick="mostrar_menu()">
+    <img class="fixed bottom-10 right-2  w-10 h-10 cursor-pointer lg:hidden " src="/Acess/menu (1).png" alt="menu" onclick="mostrar_menu()">
     <!--Início do Rodapé-->
     <footer class= "bg-[#002A50] text-white py-1 fixed bottom-0 left-0 z-50 w-full">
         <div class="flex items-center justify-center">
