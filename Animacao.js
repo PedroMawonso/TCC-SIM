@@ -13,3 +13,8 @@ links.forEach(link => {
 window.addEventListener('DOMContentLoaded', () => {
     document.body.classList.remove('opacity-0')
 })
+
+function event(){
+    var menu = document.getElementById('menuBar')
+    
+}

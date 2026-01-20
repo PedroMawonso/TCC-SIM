@@ -14,8 +14,7 @@
        overflow-hidden transition-opacity duration-700 opacity-100">
   <!-- barra superior -->
    <div class="bg-[#002A50] text-white py-5 pl-15 flex relative" >
-      
-        <img class="w-8 lg:hidden" src="/Acess/menu.png" alt="menu">
+
         <!--   Essa é a parte da logo da Instituição -->
         <div class="flex md:flex-row items-center gap-6">
             <img src="Acess/Luiza-Andaluz-Logo.png" alt="logo" class="w-10 h-10 lg:w-15 lg:h-15">
@@ -34,7 +33,7 @@
     
    <!-- Inicio menu -->
     <div class="flex lg:h-screen ">
-        <aside class="w-64 bg-[#002A50] hidden md:hidden text-white lg:flex flex-col pt-6 fixed h-screen">
+        <aside id="menuBar" class="w-64 bg-[#002A50] hidden md:hidden text-white lg:flex flex-col pt-6 fixed h-screen">
             <nav class="flex flex-col gap-5">
                 <a href="Transicao.html?next=Pagina_inicial.html" class="flex items-center w-full 
                         gap-6 bg-[#021322c7] rounded px-4 py-3">
@@ -68,6 +67,8 @@
             </nav>
         </aside>
     </div>
+     <img class="absolute w-12 h-12 bottom-20 right-8 cursor-pointer lg:hidden" 
+            src="/Acess/menu 2.png" alt="menu" onclick="event()">
     <footer class= "bg-[#002A50] text-white py-1 fixed bottom-0 left-0 z-50 w-full">
         <div class="flex items-center justify-center">
             <span class="text-sm">
