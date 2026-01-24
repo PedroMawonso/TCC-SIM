@@ -30,7 +30,7 @@
     </span>
     <script>
         const params = new URLSearchParams(window.location.search)
-        const nextpage = params.get("next") || "Pagina_inicial.html"
+        const nextpage = params.get("next") || "../Backend/Login.php" // Este caminho e acessivel mas pode ser alterado
 
         setTimeout(() => {
             window.location.href= nextpage

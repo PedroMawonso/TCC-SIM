@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script defer src="Animacao.js"></script>
+    <script defer src="../ScriptsJS/Animacao.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Sistema de Inscrição e Matricula</title>
 </head>
-<body class="font-[Poppins] min-h-screen flex flex-col bg-gray-300 
+<body class="font-[Poppins] min-h-screen flex flex-col bg-gray-200 
     h- transition-opacity duration-700 opacity-100">
   <!-- barra superior -->
    <header class="bg-[#002A50] fixed w-full top-0 left-0 z-50
@@ -29,7 +29,7 @@
         <div class="flex items-center">
             <span id="user_in" class="text-white absolute lg:right-30 right-10 font-semibold">Adimin</span>
         </div>
-   </header> bg-gray-200
+   </header>
    <!-- Fim barra superior -->
     
    <!-- Inicio menu -->
@@ -43,13 +43,13 @@
 
             <nav class="flex flex-col gap-5">
                 <a href="Transicao.html?next=Pagina_inicial.html" class="flex items-center w-full 
-                        gap-6 bg-[#021322c7] rounded px-4 py-3">
+                        gap-6 hover:bg-[#021e36c7] duration-500 hover:duration-500 rounded px-4 py-3">
                     <img src="Acess/house_18511239.png" alt="Home" class="w-8 h-8">
                     <span>Dashboard</span>
                 </a>
 
                 <a href="Transicao.html?next=inscricao.html" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
-                        duration-500 hover:duration-500  rounded px-4 py-3">
+                        rounded px-4 py-3">
                     <img src="Acess/curriculo.png" alt="Home" class="w-8 h-8">
                     <span>Inscrição</span>
                 </a>
@@ -66,6 +66,12 @@
                     <span>Alunos</span>
                 </a>
 
+                <a href="Transicao.html?next=Relatorios.html" class="flex items-center w-full gap-6 bg-[#021322c7] 
+                        duration-500 hover:duration-500  rounded px-4 py-3">
+                    <img src="Acess/estatistica.png" alt="Home" class="w-8 h-8">
+                    <span>Relatórios</span>
+                </a>
+
                   <a href="Transicao.html?next=Login.html" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
                         duration-500 hover:duration-500  rounded px-4 py-3 link">
                     <img src="Acess/log-out.png" alt="Home" class="w-8 h-8">
@@ -74,35 +80,18 @@
             </nav>
         </aside>
         <!--Inicio do Conteudo principal-->
-        <div class="flex-1 p-15 mt-10 ml-2 lg:ml-5 lg:mt-23 min-w-0 bg-gray-300 transition-all duration-300">
-            <h1 class="text-black md:text-xl lg:text-xl font-bold ">Painel Inicial</h1>
+        <div class="flex-1 p-15 mt-10 lg:ml-2 lg:mt-23 bg-gray-200">
+            <h1 class="text-black md:text-xl lg:text-xl font-bold ">Relatorios das Actividades</h1>
             <!--Os Cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-6">
-                
-                <!-- Parte dos inscritos -->
-                <div class="bg-[#084D8B] rounded-lg shadow p-12 w-80 mt-10 flex flex-col items-center text-[#ffffffe8]">
-                    <h2 class="font-bold text-xl">Total Inscritos</h2>
-                    <p id="n_inscritos" class="text-2xl mt-7">0</p>
-                </div>
-                
-                <!--Parte dos Matriculados-->
-                 <div class="bg-[#28B532] rounded-lg shadow p-12 w-80 mt-10 flex flex-col items-center text-[#ffffffe8]">
-                    <h2 class="font-bold text-xl text-center">Total Matriculados</h2>
-                    <p id="n_matriculados" class="text-2xl mt-7">0</p>
-                </div>
+            <div class="">
 
-                <!-- Parte das vagas Disponíveis-->
-                 <div class="bg-[#DF9B1D] rounded-lg shadow p-12 w-80 mt-10 flex flex-col items-center text-[#ffffffe8]">
-                    <h2 class="font-bold text-xl text-center">Total de Vagas Disponíveis</h2>
-                    <p id="n_vagas" class="text-2xl mt-7">0</p>
-                </div>
             </div>
         </div>
         <!--Fim do Conteudo principal-->
     </main>
     <!--Fim da Barra de menu -->
     
-    <img class="fixed bottom-10 right-2  w-10 h-10 cursor-pointer lg:hidden " src="/Acess/menu (1).png" alt="menu" onclick="mostrar_menu()">
+    <img class="absolute bottom-10 right-2 w-10 h-10 cursor-pointer lg:hidden " src="./Acess/menu (1).png" alt="menu" onclick="mostrar_menu()">
     <!--Início do Rodapé-->
     <footer class= "bg-[#002A50] text-white py-1 fixed bottom-0 left-0 z-50 w-full">
         <div class="flex items-center justify-center">

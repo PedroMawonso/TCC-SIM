@@ -1,8 +1,8 @@
 document.getElementById("loginForm").onsubmit = function(e) {
     e.preventDefault(); // impede o envio automático
     // COMO TODOS OS CAMPOS TÊM "required", só chega aqui se tudo estiver preenchido
-    window.location.href = "Transicao.html";
-  };
+    window.location.href = "../Backend/Login.php"; // Este caminho e acessivel
+  }; 
 
   // Funcionalidade de ver e ocultar senha
   function mostrarsenha()

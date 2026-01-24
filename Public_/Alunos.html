@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script defer src="Animacao.js"></script>
+    <script defer src="../ScriptsJS/Animacao.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -63,6 +63,12 @@
                     <span>Alunos</span>
                 </a>
 
+                <a href="Transicao.html?next=Relatorios.html" class="flex items-center w-full gap-6 hover:bg-[#021e36c7]
+                        duration-500 hover:duration-500  rounded px-4 py-3">
+                    <img src="Acess/estatistica.png" alt="Home" class="w-8 h-8">
+                    <span>Relatórios</span>
+                </a>
+
                   <a href="Transicao.html?next=Login.html" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
                         duration-500 hover:duration-500  rounded px-4 py-3 link">
                     <img src="Acess/log-out.png" alt="Home" class="w-8 h-8">
@@ -71,8 +77,8 @@
             </nav>
         </aside>
         <!--Inicio do Conteudo principal-->
-        <div class="flex-1 p-15 mt-10 lg:ml-2 lg:mt-23 bg-gray-100">
-            <h1 class="text-black md:text-xl lg:text-xl font-bold ">Alunos</h1>
+        <div class="flex-1 p-15 mt-10 lg:ml-2 lg:mt-23 bg-gray-200">
+            <h1 class="text-black md:text-xl lg:text-xl font-bold ">Alunos Matriculados</h1>
             <!--Os Cards -->
             <div class="">
 
@@ -82,7 +88,7 @@
     </main>
     <!--Fim da Barra de menu -->
     
-    <img class="absolute bottom-10 right-2 w-10 h-10 cursor-pointer lg:hidden " src="/Acess/menu (1).png" alt="menu" onclick="mostrar_menu()">
+    <img class="absolute bottom-10 right-2 w-10 h-10 cursor-pointer lg:hidden " src="./Acess/menu (1).png" alt="menu" onclick="mostrar_menu()">
     <!--Início do Rodapé-->
     <footer class= "bg-[#002A50] text-white py-1 fixed bottom-0 left-0 z-50 w-full">
         <div class="flex items-center justify-center">
