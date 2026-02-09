@@ -1,3 +1,9 @@
+<?php 
+    if(!isset($_SESSION)){
+        session_start();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -21,6 +27,14 @@
 
    <!--Importanto a funcao de mostrar e ocultar senha-->
     <script src="../ScriptsJS/script.js"></script>
+
+   <!--Essa parte deve aparecer quando houver erro no acesso ao sistema-->
+    <div class=" pl-15 pr-15 p-10 rounded-2xl items-center text-center hidden space-y-5 text-4xl flex-col
+                bg-[#051B2F] text-white">
+        <img src="./Acess/warning.png" alt="Aviso" class="w-20 h-20">
+        <h1>Erro ao Entrar no sistema</h1>
+        <h2 class="text-2xl text-center">Email ou senha incorreto</h2>
+    </div>
     
     <!-- início do formulário -->
     <form id="loginForm" method="post" action="../Backend/Login.php" class="space-y-6 w-full max-w-md rounded-4xl p-6 lg:p-8 bg-[#051B2F]">

@@ -42,36 +42,35 @@
         lg:pt-35">
 
             <nav class="flex flex-col gap-5">
-                <a href="Transicao.html?next=Pagina_inicial.html" class="flex items-center w-full 
+                <a href="Transicao.php?next=Pagina_inicial.php" class="flex items-center w-full 
                         gap-6 hover:bg-[#021e36c7] duration-500 hover:duration-500 rounded px-4 py-3">
                     <img src="Acess/house_18511239.png" alt="Home" class="w-8 h-8">
                     <span>Dashboard</span>
                 </a>
 
-                <a href="Transicao.html?next=inscricao.html" class="flex items-center w-full gap-6 bg-[#021322c7] 
-                        rounded px-4 py-3">
+                <a href="Transicao.php?next=inscricao.php" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] duration-500 hover:duration-500 rounded px-4 py-3">
                     <img src="Acess/curriculo.png" alt="Home" class="w-8 h-8">
                     <span>Inscrição</span>
                 </a>
 
-                 <a href="Transicao.html?next=Consultas.html" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
-                        duration-500 hover:duration-500  rounded px-4 py-3">
+                 <a href="Transicao.php?next=Consultas.php" class="flex items-center w-full gap-6 bg-[#021322c7] rounded px-4 py-3">
                     <img src="Acess/documento.png" alt="Home" class="w-8 h-8">
                     <span>Consultas</span>
                 </a>
 
-                 <a href="Transicao.html?next=Alunos.html" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
+                 <a href="Transicao.php?next=Alunos.php" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
                         duration-500 hover:duration-500  rounded px-4 py-3">
                     <img src="Acess/aluna (1).png" alt="Home" class="w-8 h-8">
                     <span>Alunos</span>
                 </a>
 
-                <a href="Transicao.html?next=Relatorios.html" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
+                 <a href="Transicao.php?next=Relatorios.php" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
                         duration-500 hover:duration-500  rounded px-4 py-3">
                     <img src="Acess/estatistica.png" alt="Home" class="w-8 h-8">
                     <span>Relatórios</span>
-                </a>
-                  <a href="Transicao.html?next=Login.html" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
+                </a> 
+                
+                  <a href="Transicao.php?next=Login.php" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
                         duration-500 hover:duration-500  rounded px-4 py-3 link">
                     <img src="Acess/log-out.png" alt="Home" class="w-8 h-8">
                     <span>Log out</span>
@@ -80,7 +79,7 @@
         </aside>
         <!--Inicio do Conteudo principal-->
         <div class="flex-1 p-15 mt-10 lg:ml-2 lg:mt-23 bg-gray-200">
-            <h1 class="text-black md:text-xl lg:text-xl font-bold ">Inscrição de Candidatos</h1>
+            <h1 class="text-black md:text-xl lg:text-xl font-bold ">Consulta dos Resultados dos Testes</h1>
             <!--Os Cards -->
             <div class="">
 
