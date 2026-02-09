@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script defer src="../ScriptsJS/Animacao.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Sistema de Inscrição e Matricula</title>
 </head>
 <body class="font-[Poppins] min-h-screen flex flex-col bg-gray-300 
@@ -60,7 +58,7 @@
                     <span>Consultas</span>
                 </a>
 
-                 <a href="./Transicao.php" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
+                 <a href="./Transicao.php?next=Alunos.php" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
                         duration-500 hover:duration-500  rounded px-4 py-3">
                     <img src="./Acess/aluna (1).png" alt="Home" class="w-8 h-8">
                     <span>Alunos</span>

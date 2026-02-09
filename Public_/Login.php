@@ -1,19 +1,13 @@
-<?php 
-    if(!isset($_SESSION)){
-        session_start();
-    }
-?>
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script defer src="../ScriptsJS/Animacao.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>Sistema de Inscrição e Matricula</title>
 </head>
@@ -37,14 +31,14 @@
     </div>
     
     <!-- início do formulário -->
-    <form id="loginForm" method="post" action="../Backend/Login.php" class="space-y-6 w-full max-w-md rounded-4xl p-6 lg:p-8 bg-[#051B2F]">
+    <form id="loginForm" method="post" action="../Backend/validation.php" class="space-y-6 w-full max-w-md rounded-4xl p-6 lg:p-8 bg-[#051B2F]">
 
         <h1 class="text-center text-xl lg:text-2xl font-extrabold text-[#F5EDF9] mb-6">Login IMTLA</h1>
         <!-- essa é a parte do input username -->
 
         <div class="flex flex-col gap-2 relative">
 
-            <label for="user" class="text-sm font-medium text-[#F5EDF9]">Usuário</label>
+            <label for="user" class="text-sm font- text-[#F5EDF9]">Usuário</label>
             <input type="email" name="email" placeholder="Username@gmail" required 
                 class=" w-full px-4 py-2 border-b text-white outline-none">
             <i class="bi bi-person text-2xl absolute right-8 top-9 text-gray-500"></i>
