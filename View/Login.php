@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="./Style/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script defer src="../ScriptsJS/Animacao.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -31,15 +31,15 @@
     </div>
     
     <!-- início do formulário -->
-    <form id="loginForm" method="post" action="../Backend/validation.php" class="space-y-6 w-full max-w-md rounded-4xl p-6 lg:p-8 bg-[#051B2F]">
+    <form id="loginForm" method="post" action="../Controller/logar.php" class="space-y-6 w-full max-w-md rounded-4xl p-6 lg:p-8 bg-[#051B2F]">
 
         <h1 class="text-center text-xl lg:text-2xl font-extrabold text-[#F5EDF9] mb-6">Login IMTLA</h1>
         <!-- essa é a parte do input username -->
 
         <div class="flex flex-col gap-2 relative">
 
-            <label for="user" class="text-sm font- text-[#F5EDF9]">Usuário</label>
-            <input type="email" name="email" placeholder="Username@gmail" required 
+            <label for="user" class="text-[#F5EDF9]">Email</label>
+            <input type="email" id="user" name="email" placeholder="Username@gmail" required 
                 class=" w-full px-4 py-2 border-b text-white outline-none">
             <i class="bi bi-person text-2xl absolute right-8 top-9 text-gray-500"></i>
         </div>
@@ -59,12 +59,11 @@
         <!-- este bloco é do botão -->
         <div class="flex justify-center">
             <input  type="submit"  class=" bg-[#117E0E] text-[#F5EDF9] px-4 py-3
-                 mt-5 w-full rounded-xl cursor-pointer" value="ENTRAR">
+                 mt-10 w-full rounded-xl cursor-pointer" value="ENTRAR">
         </div>
         <!-- essa é a parte do link -->
          <div class="flex justify-center">
-            <a href="#" class="text-[#F5EDF9] cursor-alias"> Entrar como 
-                <b class="cursor-pointer text-sm">ADIMIN</b> </a>            
+            
         </div>
     </form>
     <!-- Fim do formulário -->

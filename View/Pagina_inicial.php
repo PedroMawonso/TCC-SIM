@@ -1,9 +1,22 @@
+<?php 
+    session_start();
+
+    header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+    header("Cache-Control: post-check=0, pre-check=0", false);
+    header("Pragma: no-cache");
+    
+    if(!isset($_SESSION['idUser'])){
+        header("Location: Login.php");
+        exit;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="./Style/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script defer src="../ScriptsJS/Animacao.js"></script>
     <title>Sistema de Inscrição e Matricula</title>
@@ -21,13 +34,14 @@
         </div>
 
         <!--   Essa é parte da imagem do user -->
-        <div class="w-10 h-10 lg:w-15 lg:h-15 lg:right-50 bg-gray-400 rounded-full overflow-hidden absolute right-30">
+        <div class="w-10 h-10 lg:w-15 lg:h-15 lg:right-70 bg-gray-400 rounded-full overflow-hidden absolute right-50 ">
             <img src="./Acess/homem-de-negocios.png" alt="logo_homem" class="w-full h-full object-cover">
         </div>
         <div class="flex items-center">
-            <span id="user_in" class="text-white absolute lg:right-30 right-10 font-semibold">Adimin</span>
+            <span id="user_in" class="text-white absolute lg:right-30 right-10 font-semibold">
+                <?php echo $_SESSION['User']; ?></span>
         </div>
-   </header> bg-gray-200
+   </header>
    <!-- Fim barra superior -->
     
    <!-- Inicio menu -->
@@ -77,8 +91,10 @@
                 </a>
             </nav>
         </aside>
+        
         <!--Inicio do Conteudo principal-->
         <div class="flex-1 p-15 mt-10 ml-2 lg:ml-5 lg:mt-23 min-w-0 bg-gray-300 transition-all duration-300">
+
             <h1 class="text-black md:text-xl lg:text-xl font-bold ">Painel Inicial</h1>
             <!--Os Cards -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 xl:gap-15">

@@ -32,4 +32,3 @@ CREATE TABLE tb_usuario(
 --Dados pré-definidos na tabela usuario
 INSERT INTO tb_usuario(id_perfil, username, email, senha, criado_em)
 VALUES(1, 'Admin', 'admin@gmail.com', 'admin@2026', CURRENT_TIMESTAMP),
-VALUES(2, 'User1', 'user1@gmail.com', 'user1@2026', CURRENT_TIMESTAMP);

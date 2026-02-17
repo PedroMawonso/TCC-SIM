@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carregando</title>
-    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="./Style/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         *{
@@ -31,7 +31,7 @@
     </span>
     <script>
         const params = new URLSearchParams(window.location.search)
-        const nextpage = params.get("next") || "../Backend/Login.php" // Este caminho e acessivel mas pode ser alterado
+        const nextpage = params.get("next") || "Login.php" // Este caminho e acessivel mas pode ser alterado
 
         setTimeout(() => {
             window.location.href= nextpage

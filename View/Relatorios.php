@@ -1,14 +1,27 @@
+<?php 
+    session_start();
+
+    header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+    header("Cache-Control: post-check=0, pre-check=0", false);
+    header("Pragma: no-cache");
+    
+    if(!isset($_SESSION['idUser'])){
+        header("Location: Login.php");
+        exit;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="./Style/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script defer src="../ScriptsJS/Animacao.js"></script>
     <title>Sistema de Inscrição e Matricula</title>
 </head>
-<body class="font-[Poppins] min-h-screen flex flex-col bg-gray-200 
+<body class="font-[Poppins] min-h-screen flex flex-col bg-gray-300 
     h- transition-opacity duration-700 opacity-100">
   <!-- barra superior -->
    <header class="bg-[#002A50] fixed w-full top-0 left-0 z-50
@@ -16,16 +29,17 @@
       
         <!--   Essa é a parte da logo da Instituição -->
         <div class="flex md:flex-row items-center gap-6">
-            <img src="Acess/Luiza-Andaluz-Logo.png" alt="logo" class="w-10 h-10 lg:w-15 lg:h-15">
+            <img src="./Acess/Luiza-Andaluz-Logo.png" alt="logo" class="w-10 h-10 lg:w-15 lg:h-15">
             <span class="text-sm lg:text-2xl font-bold">IMTLA</span>
         </div>
 
         <!--   Essa é parte da imagem do user -->
-        <div class="w-10 h-10 lg:w-15 lg:h-15 lg:right-50 bg-gray-400 rounded-full overflow-hidden absolute right-30">
-            <img src="Acess/homem-de-negocios.png" alt="logo_homem" class="w-full h-full object-cover">
+        <div class="w-10 h-10 lg:w-15 lg:h-15 lg:right-70 bg-gray-400 rounded-full overflow-hidden absolute right-50 ">
+            <img src="./Acess/homem-de-negocios.png" alt="logo_homem" class="w-full h-full object-cover">
         </div>
         <div class="flex items-center">
-            <span id="user_in" class="text-white absolute lg:right-30 right-10 font-semibold">Adimin</span>
+            <span id="user_in" class="text-white absolute lg:right-30 right-10 font-semibold">
+                <?php echo $_SESSION['User']; ?></span>
         </div>
    </header>
    <!-- Fim barra superior -->
@@ -46,12 +60,14 @@
                     <span>Dashboard</span>
                 </a>
 
-                <a href="Transicao.php?next=inscricao.php" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] duration-500 hover:duration-500 rounded px-4 py-3">
+                <a href="Transicao.php?next=inscricao.php" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
+                        rounded px-4 py-3">
                     <img src="Acess/curriculo.png" alt="Home" class="w-8 h-8">
                     <span>Inscrição</span>
                 </a>
 
-                 <a href="Transicao.php?next=Consultas.php" class="flex items-center w-full gap-6 bg-[#021322c7] rounded px-4 py-3">
+                 <a href="Transicao.php?next=Consultas.php" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
+                        duration-500 hover:duration-500  rounded px-4 py-3">
                     <img src="Acess/documento.png" alt="Home" class="w-8 h-8">
                     <span>Consultas</span>
                 </a>
@@ -62,12 +78,12 @@
                     <span>Alunos</span>
                 </a>
 
-                 <a href="Transicao.php?next=Relatorios.php" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
+                <a href="Transicao.php?next=Relatorios.php" class="flex items-center w-full gap-6 bg-[#021322c7] 
                         duration-500 hover:duration-500  rounded px-4 py-3">
                     <img src="Acess/estatistica.png" alt="Home" class="w-8 h-8">
                     <span>Relatórios</span>
-                </a> 
-                
+                </a>
+
                   <a href="Transicao.php?next=Login.php" class="flex items-center w-full gap-6 hover:bg-[#021e36c7] 
                         duration-500 hover:duration-500  rounded px-4 py-3 link">
                     <img src="Acess/log-out.png" alt="Home" class="w-8 h-8">
@@ -76,8 +92,8 @@
             </nav>
         </aside>
         <!--Inicio do Conteudo principal-->
-        <div class="flex-1 p-15 mt-10 lg:ml-2 lg:mt-23 bg-gray-200">
-            <h1 class="text-black md:text-xl lg:text-xl font-bold ">Consulta dos Resultados dos Testes</h1>
+        <div class="flex-1 p-15 mt-10 lg:ml-2 lg:mt-23 bg-gray-300">
+            <h1 class="text-black md:text-xl lg:text-xl font-bold ">Relatorios das Actividades</h1>
             <!--Os Cards -->
             <div class="">
 
