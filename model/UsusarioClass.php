@@ -21,5 +21,20 @@ class Ususario{
             return false;
         }
     }
+
+    public function Logado($id){
+        global $pdo;
+
+        $array = array();
+        $sql = "SELECT username FROM tb_usuario WHERE id_usuario = :id_usuario";
+        $sql = $pdo->prepare($sql);
+        $sql->bindValue("id_usuario", $id);
+        $sql->execute(); 
+        
+        if ($sql->rowCount() > 0){
+            $array = $sql->fetch();
+        }
+        return $array;
+    }
 }
 ?>
