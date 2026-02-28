@@ -1,15 +1,4 @@
-<?php 
-    session_start();
-
-    header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
-    header("Cache-Control: post-check=0, pre-check=0", false);
-    header("Pragma: no-cache");
-    
-    if(!isset($_SESSION['idUser'])){
-        header("Location: Login.php");
-        exit;
-    }
-?>
+<?php require '../Controller/validacao_user.php'; ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -39,7 +28,7 @@
         </div>
         <div class="flex items-center">
             <span id="user_in" class="text-white absolute lg:right-30 right-10 font-semibold">
-                <?php echo $_SESSION['User']; ?></span>
+            <?php echo $nomeuser; ?></span>
         </div>
    </header>
    <!-- Fim barra superior -->
@@ -134,3 +123,4 @@
     <!--Fim do Rodapé-->
 </body>
 </html>
+
