@@ -45,13 +45,8 @@
    <!-- Fim barra superior -->
     
    <!-- Inicio menu -->
-    <main class="flex lg:h-screen">
-        <aside id="sidebar" class="w-50 bg-[#002A50] text-amber-50 h-screen 
-        fixed top-0 left-0 flex flex-col 
-        pt-25 transition-all duration-300
-        -translate-x-full opacity-0 text-[12px] lg:w-64
-        lg:translate-x-0 lg:opacity-100 lg:static lg:flex lg:text-[16px]
-        lg:pt-35">
+    <main class="flex flex-col lg:flex-row lg:h-screen">
+        <aside id="sidebar" class="w-44 sm:w-52 md:w-56 lg:w-64 bg-[#002A50] text-amber-50 h-60 lg:h-screen fixed top-0 left-0 flex flex-col pt-16 sm:pt-24 transition-all duration-300 -translate-x-full opacity-0 text-xs sm:text-sm md:text-base lg:text-[16px] lg:translate-x-0 lg:opacity-100 lg:static lg:flex lg:pt-36 z-40">
 
             <nav class="flex flex-col gap-5">
                 <a href="Transicao.php?next=Pagina_inicial.php" class="flex items-center w-full 
@@ -92,24 +87,22 @@
             </nav>
         </aside>
         <!--Inicio do Conteudo principal-->
-        <div class="flex-1 p-15 mt-10 lg:ml-2 lg:mt-23 bg-gray-300">
-            <h1 class="text-black md:text-xl lg:text-xl font-bold ">Relatorios das Actividades</h1>
+        <div class="flex-1 px-2 sm:px-4 py-8 mt-16 sm:mt-20 lg:ml-64 min-w-0 bg-gray-300 transition-all duration-300">
+            <h1 class="text-black text-lg sm:text-xl lg:text-2xl font-bold mb-4">Relatórios das Atividades</h1>
             <!--Os Cards -->
             <div class="">
-
+                <!-- Conteúdo de relatórios pode ser adicionado aqui -->
             </div>
         </div>
         <!--Fim do Conteudo principal-->
     </main>
     <!--Fim da Barra de menu -->
     
-    <img class="absolute bottom-10 right-2 w-10 h-10 cursor-pointer lg:hidden " src="./Acess/menu (1).png" alt="menu" onclick="mostrar_menu()">
+    <img class="fixed bottom-6 right-2 w-8 h-8 sm:w-10 sm:h-10 cursor-pointer lg:hidden z-50" src="./Acess/menu (1).png" alt="menu" onclick="mostrar_menu()">
     <!--Início do Rodapé-->
-    <footer class= "bg-[#002A50] text-white py-1 fixed bottom-0 left-0 z-50 w-full">
+    <footer class="bg-[#002A50] text-white py-2 fixed bottom-0 left-0 z-50 w-full">
         <div class="flex items-center justify-center">
-            <span class="text-sm">
-                 ©2026-Elite Finalistas Todos os direitos reservados
-            </span>
+            <span class="text-xs sm:text-sm">©2026-Elite Finalistas Todos os direitos reservados</span>
         </div>
     </footer>
     <!--Fim do Rodapé-->

@@ -29,6 +29,6 @@ CREATE TABLE tb_usuario(
     FOREIGN KEY(id_perfil) REFERENCES tb_perfil(id_perfil) 
 );
 
---Dados pré-definidos na tabela usuario
+-- Dados pré-definidos na tabela usuario
 INSERT INTO tb_usuario(id_perfil, username, email, senha, criado_em)
-VALUES(1, 'Admin', 'admin@gmail.com', 'admin@2026', CURRENT_TIMESTAMP),
+VALUES(1, 'Admin', 'admin@gmail.com', 'admin@2026', CURRENT_TIMESTAMP)

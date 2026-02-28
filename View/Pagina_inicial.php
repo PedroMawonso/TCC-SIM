@@ -34,13 +34,8 @@
    <!-- Fim barra superior -->
     
    <!-- Inicio menu -->
-    <main class="flex lg:h-screen">
-        <aside id="sidebar" class="w-50 bg-[#002A50] text-amber-50 h-screen 
-        fixed top-0 left-0 flex flex-col 
-        pt-25 transition-all duration-300
-        -translate-x-full opacity-0 text-[12px] lg:w-64
-        lg:translate-x-0 lg:opacity-100 lg:static lg:flex lg:text-[16px]
-        lg:pt-35">
+    <main class="flex flex-col lg:flex-row lg:h-screen">
+        <aside id="sidebar" class="w-44 sm:w-52 md:w-56 lg:w-64 bg-[#002A50] text-amber-50 h-60 lg:h-screen fixed top-0 left-0 flex flex-col pt-16 sm:pt-24 transition-all duration-300 -translate-x-full opacity-0 text-xs sm:text-sm md:text-base lg:text-[16px] lg:translate-x-0 lg:opacity-100 lg:static lg:flex lg:pt-36 z-40">
 
             <nav class="flex flex-col gap-5">
                 <a href="./Transicao.php?next=Pagina_inicial.php" class="flex items-center w-full 
@@ -82,28 +77,24 @@
         </aside>
         
         <!--Inicio do Conteudo principal-->
-        <div class="flex-1 p-15 mt-10 ml-2 lg:ml-5 lg:mt-23 min-w-0 bg-gray-300 transition-all duration-300">
-
-            <h1 class="text-black md:text-xl lg:text-xl font-bold ">Painel Inicial</h1>
+        <div class="flex-1 px-2 sm:px-4 py-8 mt-16 sm:mt-20 lg:ml-64 min-w-0 bg-gray-300 transition-all duration-300">
+            <h1 class="text-black text-lg sm:text-xl lg:text-2xl font-bold mb-4">Painel Inicial</h1>
             <!--Os Cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 xl:gap-15">
-                
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 xl:gap-12">
                 <!-- Parte dos inscritos -->
-                <div class="bg-[#084D8B] rounded-lg shadow p-12 w-80 mt-10 flex flex-col items-center text-[#ffffffe8]">
-                    <h2 class="font-bold text-xl">Total Inscritos</h2>
-                    <p id="n_inscritos" class="text-2xl mt-7">0</p>
+                <div class="bg-[#084D8B] rounded-lg shadow p-6 sm:p-8 w-full max-w-xs mx-auto mt-6 flex flex-col items-center text-[#ffffffe8]">
+                    <h2 class="font-bold text-base sm:text-xl">Total Inscritos</h2>
+                    <p id="n_inscritos" class="text-xl sm:text-2xl mt-4 sm:mt-7">0</p>
                 </div>
-                
                 <!--Parte dos Matriculados-->
-                 <div class="bg-[#28B532] rounded-lg shadow p-12 w-80 mt-10 flex flex-col items-center text-[#ffffffe8]">
-                    <h2 class="font-bold text-xl text-center">Total Matriculados</h2>
-                    <p id="n_matriculados" class="text-2xl mt-7">0</p>
+                <div class="bg-[#28B532] rounded-lg shadow p-6 sm:p-8 w-full max-w-xs mx-auto mt-6 flex flex-col items-center text-[#ffffffe8]">
+                    <h2 class="font-bold text-base sm:text-xl text-center">Total Matriculados</h2>
+                    <p id="n_matriculados" class="text-xl sm:text-2xl mt-4 sm:mt-7">0</p>
                 </div>
-
                 <!-- Parte das vagas Disponíveis-->
-                 <div class="bg-[#DF9B1D] rounded-lg shadow p-12 w-80 mt-10 flex flex-col items-center text-[#ffffffe8]">
-                    <h2 class="font-bold text-xl text-center">Total de Vagas Disponíveis</h2>
-                    <p id="n_vagas" class="text-2xl mt-7">0</p>
+                <div class="bg-[#DF9B1D] rounded-lg shadow p-6 sm:p-8 w-full max-w-xs mx-auto mt-6 flex flex-col items-center text-[#ffffffe8]">
+                    <h2 class="font-bold text-base sm:text-xl text-center">Total de Vagas Disponíveis</h2>
+                    <p id="n_vagas" class="text-xl sm:text-2xl mt-4 sm:mt-7">0</p>
                 </div>
             </div>
         </div>
@@ -111,13 +102,11 @@
     </main>
     <!--Fim da Barra de menu -->
     
-    <img class="fixed bottom-10 right-2  w-10 h-10 cursor-pointer lg:hidden " src="./Acess/menu (1).png" alt="menu" onclick="mostrar_menu()">
+    <img class="fixed bottom-6 right-2 w-8 h-8 sm:w-10 sm:h-10 cursor-pointer lg:hidden z-50" src="./Acess/menu (1).png" alt="menu" onclick="mostrar_menu()">
     <!--Início do Rodapé-->
-    <footer class= "bg-[#002A50] text-white py-1 fixed bottom-0 left-0 z-50 w-full">
+    <footer class="bg-[#002A50] text-white py-2 fixed bottom-0 left-0 z-50 w-full">
         <div class="flex items-center justify-center">
-            <span class="text-sm">
-                 ©2026-Elite Finalistas Todos os direitos reservados
-            </span>
+            <span class="text-xs sm:text-sm">©2026-Elite Finalistas Todos os direitos reservados</span>
         </div>
     </footer>
     <!--Fim do Rodapé-->

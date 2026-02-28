@@ -25,10 +25,8 @@
         }
     </style>
 </head> 
-<body class="w-full min-h-screen flex items-center justify-center">
-    <span class="trans w-[60px] h-[60px] bg-transparent block rounded-[50%] 
-            border-12 border-cyan-700 border-t-12 border-t-transparent">
-    </span>
+<body class="w-full min-h-screen flex items-center justify-center bg-gradient-to-br from-[#051B2F] to-[#002A50] px-2">
+    <span class="trans block w-12 h-12 sm:w-[60px] sm:h-[60px] rounded-full border-8 sm:border-[12px] border-cyan-700 border-t-transparent border-solid"></span>
     <script>
         const params = new URLSearchParams(window.location.search)
         const nextpage = params.get("next") || "Login.php" // Este caminho e acessivel mas pode ser alterado
